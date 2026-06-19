@@ -1,0 +1,13 @@
+
+> hospital-website-frontend@0.0.0 build
+> tsc && vite build
+
+vite v4.5.14 building for production...
+transforming...
+✓ 2178 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.82 kB │ gzip:   0.46 kB
+dist/assets/index-37b2e26a.css   26.61 kB │ gzip:   5.30 kB
+dist/assets/index-4f6bf027.js   381.01 kB │ gzip: 121.37 kB
+✓ built in 17.32s
