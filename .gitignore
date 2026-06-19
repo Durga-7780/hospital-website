@@ -1,9 +1,12 @@
 node_modules/
-.venv/
-venv/
 dist/
 build/
+.venv/
+venv/
 __pycache__/
+*.log
 .env
-logs/
-vendor/
+.env.*
+coverage/
+.cache/
+tmp/
