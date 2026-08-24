@@ -115,7 +115,7 @@ async def chat_endpoint(request: ChatRequest):
         
         chat_completion = client.chat.completions.create(
             messages=messages,
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-20b",
             tools=tools,
             tool_choice="auto",
         )
