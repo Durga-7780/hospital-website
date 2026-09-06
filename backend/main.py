@@ -178,7 +178,7 @@ async def chat_endpoint(request: ChatRequest):
             
             # Second call to Groq with tool results
             second_response = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model="openai/gpt-oss-20b",
                 messages=messages
             )
             reply_content = second_response.choices[0].message.content
@@ -234,7 +234,7 @@ async def chat_endpoint(request: ChatRequest):
                 messages.append({"role": "user", "content": f"System: Tool {function_name} returned: {function_response}. Now reply to the user naturally."})
                 
                 second_response = client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
+                    model="openai/gpt-oss-20b",
                     messages=messages
                 )
                 reply_content = second_response.choices[0].message.content
